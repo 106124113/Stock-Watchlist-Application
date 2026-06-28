@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
   res.send("Stock Watchlist Backend Running");
 });
 
-const PORT = 5000;
+const PORT = 5001;
 const authRoutes = require("./routes/authRoutes");
 app.use("/api/auth",authRoutes);
 app.listen(PORT, () => {
