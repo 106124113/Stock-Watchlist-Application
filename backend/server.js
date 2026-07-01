@@ -26,6 +26,8 @@ app.get("/", (req, res) => {
 const PORT = 5001;
 const authRoutes = require("./routes/authRoutes");
 app.use("/api/auth",authRoutes);
+const watchlistRoutes = require("./routes/watchlistRoutes");
+app.use("/api/watchlists", watchlistRoutes);
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
